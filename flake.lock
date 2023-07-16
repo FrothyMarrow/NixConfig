@@ -869,16 +869,15 @@
         "zig": "zig"
       },
       "locked": {
-        "lastModified": 1689438249,
-        "narHash": "sha256-EkVFlK20Ki5bSFVh2LlIrYXJ4//hBimF4U1AhJwPAY0=",
+        "lastModified": 1689503491,
+        "narHash": "sha256-+STD0BWc4VOlpNiGyzez4j5qNHb6Jx+rSHortHkOjaw=",
         "owner": "notashelf",
         "repo": "neovim-flake",
-        "rev": "896c09b972e95ed276f41fd8f15070922603aec6",
+        "rev": "eaab87d1510c8a3d4437fcc2fbf66397e5d9b957",
         "type": "github"
       },
       "original": {
         "owner": "notashelf",
-        "ref": "release/v0.4",
         "repo": "neovim-flake",
         "type": "github"
       }
