@@ -10,7 +10,7 @@
     darwin.url = "github:lnl7/nix-darwin";
     darwin.inputs.nixpkgs.follows = "nixpkgs";
 
-    neovim-flake.url = "github:notashelf/neovim-flake?ref=release/v0.4";
+    neovim-flake.url = "github:notashelf/neovim-flake";
     neovim-flake.inputs.nixpkgs.follows = "nixpkgs";
   };
 
