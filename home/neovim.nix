@@ -101,6 +101,8 @@
 
     vim.tabline.nvimBufferline.enable = true;
 
+    vim.terminal.toggleterm.enable = true;
+
     vim.autocomplete.enable = true;
     vim.autocomplete.type = "nvim-cmp";
   };
