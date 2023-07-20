@@ -833,6 +833,8 @@
         "nvim-dap-ui": "nvim-dap-ui",
         "nvim-lightbulb": "nvim-lightbulb",
         "nvim-lspconfig": "nvim-lspconfig",
+        "nvim-navbuddy": "nvim-navbuddy",
+        "nvim-navic": "nvim-navic",
         "nvim-neoclip": "nvim-neoclip",
         "nvim-notify": "nvim-notify",
         "nvim-session-manager": "nvim-session-manager",
@@ -869,15 +871,16 @@
         "zig": "zig"
       },
       "locked": {
-        "lastModified": 1689503491,
-        "narHash": "sha256-+STD0BWc4VOlpNiGyzez4j5qNHb6Jx+rSHortHkOjaw=",
+        "lastModified": 1689797189,
+        "narHash": "sha256-V/RoUQ1J0xa7rnEGfpcP9y1OiSiU71C0A7gtku4f8OA=",
         "owner": "notashelf",
         "repo": "neovim-flake",
-        "rev": "eaab87d1510c8a3d4437fcc2fbf66397e5d9b957",
+        "rev": "b9e152aa509f3c43c291be5717db57f6c86cb999",
         "type": "github"
       },
       "original": {
         "owner": "notashelf",
+        "ref": "feature/breadcrumbs",
         "repo": "neovim-flake",
         "type": "github"
       }
@@ -1228,6 +1231,38 @@
       "original": {
         "owner": "neovim",
         "repo": "nvim-lspconfig",
+        "type": "github"
+      }
+    },
+    "nvim-navbuddy": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1688569844,
+        "narHash": "sha256-011RT/wnQdBR1vMrXFwxbicBAgdcd4eQYPbok/o3CIE=",
+        "owner": "SmiteshP",
+        "repo": "nvim-navbuddy",
+        "rev": "244a4cded6f2b568403684131d148048efe4e8af",
+        "type": "github"
+      },
+      "original": {
+        "owner": "SmiteshP",
+        "repo": "nvim-navbuddy",
+        "type": "github"
+      }
+    },
+    "nvim-navic": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1689447657,
+        "narHash": "sha256-fcSer6l6oX0qnOcRfNSZImmtkqjdH0WSUkptjaFj0AI=",
+        "owner": "SmiteshP",
+        "repo": "nvim-navic",
+        "rev": "e6da6f74d89de65258ea7e98e22103ff5de6dcf5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "SmiteshP",
+        "repo": "nvim-navic",
         "type": "github"
       }
     },
