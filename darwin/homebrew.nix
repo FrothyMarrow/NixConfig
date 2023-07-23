@@ -4,6 +4,7 @@
 
   homebrew.casks = [
     "microsoft-office"
+    "microsoft-teams"
     # great game btw
     "minecraft"
     "arc"
