@@ -13,10 +13,11 @@
     show-recents = false;
     mru-spaces = false;
     launchanim = true;
+    autohide = true;
     minimize-to-application = true;
     tilesize = 46;
     mineffect = "genie";
-    orientation = "left";
+    orientation = "bottom";
   };
 
   # menu clock
