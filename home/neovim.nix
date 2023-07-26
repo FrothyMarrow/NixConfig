@@ -103,6 +103,8 @@
 
     vim.terminal.toggleterm.enable = true;
 
+    vim.ui.borders.enable = true;
+
     vim.autocomplete.enable = true;
     vim.autocomplete.type = "nvim-cmp";
   };
