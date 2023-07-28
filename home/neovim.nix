@@ -23,6 +23,7 @@
     vim.ui = {
       noice.enable = true;
       colorizer.enable = true;
+      breadcrumbs.enable = true;
       modes-nvim.enable = false;
     };
 
