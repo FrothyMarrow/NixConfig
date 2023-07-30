@@ -16,6 +16,8 @@
     autohide = true;
     minimize-to-application = true;
     tilesize = 46;
+    autohide-delay = 0.0;
+    autohide-time-modifier = 0.0;
     mineffect = "genie";
     orientation = "bottom";
   };
