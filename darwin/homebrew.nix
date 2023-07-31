@@ -17,5 +17,6 @@
     "firefox"
     "cloudflare-warp"
     "notion"
+    "stats"
   ];
 }
