@@ -15,8 +15,11 @@
     "discord"
     "spotify"
     "firefox"
-    "cloudflare-warp"
     "notion"
     "stats"
   ];
+
+  homebrew.masApps = {
+    "WireGuard" = 1451685025;
+  };
 }
