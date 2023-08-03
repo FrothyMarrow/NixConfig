@@ -2,7 +2,12 @@
   homebrew.enable = true;
   homebrew.onActivation.autoUpdate = false;
 
+  homebrew.brews = [
+    "bitwarden-cli"
+  ];
+
   homebrew.casks = [
+    "bitwarden"
     "microsoft-office"
     "microsoft-teams"
     # great game btw
