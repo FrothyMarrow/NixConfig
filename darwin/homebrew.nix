@@ -3,6 +3,7 @@
   homebrew.onActivation.autoUpdate = false;
 
   homebrew.brews = [
+    "linode-cli"
     "bitwarden-cli"
   ];
 
