@@ -13,7 +13,7 @@
     vim.visuals = {
       nvimWebDevicons.enable = true;
       cellularAutomaton.enable = true;
-      fidget-nvim.enable = true;
+      fidget-nvim.enable = false;
       smoothScroll.enable = true;
 
       cursorWordline.enable = true;
