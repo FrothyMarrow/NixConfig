@@ -9,6 +9,7 @@
 
   homebrew.casks = [
     "bitwarden"
+    "betterdiscord-installer"
     "microsoft-office"
     "microsoft-teams"
     # great game btw
