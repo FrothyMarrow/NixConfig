@@ -7,6 +7,10 @@
     syntaxHighlighting.enable = true;
   };
 
+  programs.zsh.sessionVariables = {
+    EDITOR = "nvim";
+  };
+
   # aliases
   programs.zsh.shellAliases = {
     darwinsw = "darwin-rebuild switch --flake ~/.config/NixConfig";
