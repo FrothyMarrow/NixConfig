@@ -2,11 +2,6 @@
   homebrew.enable = true;
   homebrew.onActivation.autoUpdate = false;
 
-  homebrew.brews = [
-    "linode-cli"
-    "bitwarden-cli"
-  ];
-
   homebrew.casks = [
     "bitwarden"
     "betterdiscord-installer"
