@@ -4,7 +4,7 @@
   # window
   programs.alacritty.settings.window = {
     decorations = "buttonless";
-    opacity = 0.87;
+    opacity = 0.75;
     padding.x = 10;
     padding.y = 10;
   };
