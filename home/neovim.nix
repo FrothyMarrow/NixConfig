@@ -92,6 +92,13 @@
       gitsigns.codeActions = false;
     };
 
+    vim.assistant = {
+      copilot = {
+        enable = true;
+        cmp.enable = true;
+      };
+    };
+
     vim.autopairs.enable = true;
 
     vim.telescope.enable = true;
