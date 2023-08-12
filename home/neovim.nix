@@ -41,8 +41,7 @@
     };
 
     vim.filetree = {
-      nvimTreeLua.enable = true;
-      nvimTreeLua.view.adaptiveSize = false;
+      nvimTree.enable = true;
     };
 
     vim.lsp = {
