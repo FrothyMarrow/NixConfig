@@ -42,6 +42,7 @@
 
     vim.filetree = {
       nvimTree.enable = true;
+      nvimTree.mappings.toggle = "<C-n>";
     };
 
     vim.lsp = {
