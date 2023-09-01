@@ -11,19 +11,19 @@
 
   # font
   programs.alacritty.settings.font = {
-    size = 15;
+    size = 17;
     normal = {
-      family = "MesloLGM Nerd Font Mono";
+      family = "Iosevka Nerd Font Mono";
       style = "Regular";
     };
 
     bold = {
-      family = "MesloLGM Nerd Font Mono";
+      family = "Iosevka Nerd Font Mono";
       style = "Bold";
     };
 
     italic = {
-      family = "MesloLGM Nerd Font Mono";
+      family = "Iosevka Nerd Font Mono";
       style = "Italic";
     };
   };

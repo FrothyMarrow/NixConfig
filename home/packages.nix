@@ -14,6 +14,7 @@
     (nerdfonts.override {
       fonts = [
         "Meslo"
+        "Iosevka"
       ];
     })
   ];
