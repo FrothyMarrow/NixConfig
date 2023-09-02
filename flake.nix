@@ -40,6 +40,7 @@
       frothy-git = import ./home/git.nix;
       frothy-alacritty = import ./home/alacritty.nix;
       frothy-neovim = import ./home/neovim.nix;
+      frothy-copy-apps = import ./home/copy-apps.nix;
       notashelf-neovim-flake = inputs.neovim-flake.homeManagerModules.default;
     };
 
