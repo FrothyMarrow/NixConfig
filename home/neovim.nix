@@ -16,8 +16,8 @@
       fidget-nvim.enable = false;
       smoothScroll.enable = true;
 
-      cursorWordline.enable = true;
-      cursorWordline.lineTimeout = 0;
+      cursorline.enable = true;
+      cursorline.lineTimeout = 0;
     };
 
     vim.ui = {
