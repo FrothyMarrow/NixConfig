@@ -7,6 +7,11 @@
       vimAlias = true;
       startPlugins = with pkgs; [vimPlugins.friendly-snippets];
       enableEditorconfig = true;
+
+      treesitter.grammars = with pkgs.vimPlugins.nvim-treesitter.builtGrammars; [
+        # Without lua parser it throws 'query: invalid node type' errors in noice
+        lua
+      ];
     };
 
     vim.visuals.enable = true;
