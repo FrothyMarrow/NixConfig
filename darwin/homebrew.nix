@@ -11,7 +11,6 @@
     "minecraft"
     "arc"
     "raycast"
-    # yabai is just for blur and window borders
     "amethyst"
     "whatsapp"
     "discord"
