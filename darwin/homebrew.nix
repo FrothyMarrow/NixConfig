@@ -2,11 +2,16 @@
   homebrew.enable = true;
   homebrew.onActivation.autoUpdate = false;
 
+  homebrew.brews = [
+    # for vscode-neovim
+    "neovim"
+  ];
+
   homebrew.casks = [
     "bitwarden"
-    "betterdiscord-installer"
     "microsoft-office"
     "microsoft-teams"
+    "vscodium"
     # great game btw
     "minecraft"
     "arc"
