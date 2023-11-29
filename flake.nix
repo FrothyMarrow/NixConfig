@@ -12,6 +12,9 @@
 
     neovim-flake.url = "github:notashelf/neovim-flake";
     neovim-flake.inputs.nixpkgs.follows = "nixpkgs";
+    
+    spicetify-nix.url = "github:gerg-l/spicetify-nix";
+    spicetify-nix.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs = {
@@ -41,6 +44,7 @@
       frothy-alacritty = import ./home/alacritty.nix;
       frothy-neovim = import ./home/neovim.nix;
       frothy-copy-apps = import ./home/copy-apps.nix;
+      frothy-spicetify = import ./home/spicetify.nix;
       notashelf-neovim-flake = inputs.neovim-flake.homeManagerModules.default;
     };
 
@@ -54,6 +58,7 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.users.frothy.imports = attrValues self.homeManagerModules;
+            home-manager.extraSpecialArgs = { inherit inputs; };
           }
         ];
     };
