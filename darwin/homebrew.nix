@@ -19,7 +19,6 @@
     "amethyst"
     "whatsapp"
     "discord"
-    "spotify"
     "firefox"
     "notion"
     "stats"
