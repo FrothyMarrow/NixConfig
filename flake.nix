@@ -27,24 +27,24 @@
     inherit (nixpkgs.lib) attrValues;
   in {
     darwinModules = {
-      aix-general = import ./darwin/general.nix;
-      aix-defaults = import ./darwin/defaults.nix;
-      aix-services = import ./darwin/services.nix;
-      aix-homebrew = import ./darwin/homebrew.nix;
+      aix-general = ./darwin/general.nix;
+      aix-defaults = ./darwin/defaults.nix;
+      aix-services = ./darwin/services.nix;
+      aix-homebrew = ./darwin/homebrew.nix;
     };
 
     homeManagerModules = {
-      frothy-general = import ./home/general.nix;
-      frothy-packages = import ./home/packages.nix;
-      frothy-zsh = import ./home/zsh.nix;
-      frothy-starship = import ./home/starship.nix;
-      frothy-direnv = import ./home/direnv.nix;
-      frothy-fzf = import ./home/fzf.nix;
-      frothy-git = import ./home/git.nix;
-      frothy-alacritty = import ./home/alacritty.nix;
-      frothy-neovim = import ./home/neovim.nix;
-      frothy-copy-apps = import ./home/copy-apps.nix;
-      frothy-spicetify = import ./home/spicetify.nix;
+      frothy-general = ./home/general.nix;
+      frothy-packages = ./home/packages.nix;
+      frothy-zsh = ./home/zsh.nix;
+      frothy-starship = ./home/starship.nix;
+      frothy-direnv = ./home/direnv.nix;
+      frothy-fzf = ./home/fzf.nix;
+      frothy-git = ./home/git.nix;
+      frothy-alacritty = ./home/alacritty.nix;
+      frothy-neovim = ./home/neovim.nix;
+      frothy-copy-apps = ./home/copy-apps.nix;
+      frothy-spicetify = ./home/spicetify.nix;
       notashelf-neovim-flake = inputs.neovim-flake.homeManagerModules.default;
     };
 
