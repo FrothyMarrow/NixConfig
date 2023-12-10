@@ -1,2 +1,3 @@
 # Ignore nix store symlink
 result 
+/.direnv

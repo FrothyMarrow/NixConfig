@@ -12,7 +12,7 @@
 
     neovim-flake.url = "github:notashelf/neovim-flake";
     neovim-flake.inputs.nixpkgs.follows = "nixpkgs";
-    
+
     spicetify-nix.url = "github:gerg-l/spicetify-nix";
     spicetify-nix.inputs.nixpkgs.follows = "nixpkgs";
   };
@@ -24,6 +24,10 @@
     darwin,
     ...
   } @ inputs: let
+    system = "aarch64-darwin";
+    pkgs = import nixpkgs {
+      inherit system;
+    };
     inherit (nixpkgs.lib) attrValues;
   in {
     darwinModules = {
@@ -50,7 +54,7 @@
     };
 
     darwinConfigurations.aix = darwin.lib.darwinSystem {
-      system = "aarch64-darwin";
+      inherit system;
       modules =
         attrValues self.darwinModules
         ++ [
@@ -59,9 +63,19 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.users.frothy.imports = attrValues self.homeManagerModules;
-            home-manager.extraSpecialArgs = { inherit inputs; };
+            home-manager.extraSpecialArgs = {inherit inputs;};
           }
         ];
+    };
+
+    formatter.${system} = pkgs.alejandra;
+
+    devShells.${system}.default = pkgs.mkShell {
+      packages = [
+        pkgs.git
+        pkgs.nil
+        pkgs.alejandra
+      ];
     };
   };
 }
