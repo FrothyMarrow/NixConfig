@@ -18,7 +18,6 @@
     "raycast"
     "amethyst"
     "whatsapp"
-    "discord"
     "firefox"
     "notion"
     "stats"

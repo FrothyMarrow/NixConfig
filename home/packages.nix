@@ -17,5 +17,8 @@
         "Iosevka"
       ];
     })
+    (discord.override {
+      withVencord = true;
+    })
   ];
 }
