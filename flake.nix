@@ -24,12 +24,14 @@
     darwin,
     ...
   } @ inputs: let
+    inherit (nixpkgs.lib) attrValues;
+
     system = "aarch64-darwin";
+
     pkgs = import nixpkgs {
       inherit system;
     };
-    inherit (nixpkgs.lib) attrValues;
-  in {
+
     darwinModules = {
       aix-general = ./darwin/general.nix;
       aix-defaults = ./darwin/defaults.nix;
@@ -52,17 +54,17 @@
       frothy-spicetify = ./home/spicetify.nix;
       notashelf-neovim-flake = inputs.neovim-flake.homeManagerModules.default;
     };
-
+  in {
     darwinConfigurations.aix = darwin.lib.darwinSystem {
       inherit system;
       modules =
-        attrValues self.darwinModules
+        attrValues darwinModules
         ++ [
           home-manager.darwinModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.frothy.imports = attrValues self.homeManagerModules;
+            home-manager.users.frothy.imports = attrValues homeManagerModules;
             home-manager.extraSpecialArgs = {inherit inputs;};
           }
         ];
