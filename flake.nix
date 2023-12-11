@@ -68,6 +68,7 @@
             home-manager.extraSpecialArgs = {inherit inputs;};
           }
         ];
+      specialArgs = {inherit inputs;};
     };
 
     formatter.${system} = pkgs.alejandra;

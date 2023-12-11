@@ -1,4 +1,8 @@
-{pkgs, ...}: let
+{
+  inputs,
+  pkgs,
+  ...
+}: let
   username = "frothy";
 in {
   # shells
@@ -29,6 +33,9 @@ in {
       "flakes"
     ];
   };
+
+  nix.nixPath = ["nixpkgs=${inputs.nixpkgs}"];
+  nix.registry.nixpkgs.flake = inputs.nixpkgs;
 
   users.users.${username} = {
     name = "${username}";
