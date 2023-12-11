@@ -53,4 +53,7 @@
   system.defaults.SoftwareUpdate = {
     AutomaticallyInstallMacOSUpdates = false;
   };
+
+  # sudo authentication
+  security.pam.enableSudoTouchIdAuth = true;
 }
