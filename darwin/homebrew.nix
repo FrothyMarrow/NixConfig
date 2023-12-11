@@ -2,9 +2,17 @@
   homebrew.enable = true;
   homebrew.onActivation.autoUpdate = false;
 
+  homebrew.taps = [
+    "FelixKratz/formulae"
+  ];
+
   homebrew.brews = [
     # for vscode-neovim
     "neovim"
+    {
+      name = "borders";
+      restart_service = "changed";
+    }
   ];
 
   homebrew.casks = [

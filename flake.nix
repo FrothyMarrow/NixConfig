@@ -52,6 +52,7 @@
       frothy-neovim = ./home/neovim.nix;
       frothy-copy-apps = ./home/copy-apps.nix;
       frothy-spicetify = ./home/spicetify.nix;
+      frothy-borders = ./home/borders.nix;
       notashelf-neovim-flake = inputs.neovim-flake.homeManagerModules.default;
     };
   in {
