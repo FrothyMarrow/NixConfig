@@ -19,10 +19,6 @@ in {
 
   nixpkgs.config.allowUnfree = true;
 
-  nix.extraOptions = ''
-    experimental-features = nix-command flakes
-  '';
-
   nix.settings = {
     # recommended for direnv
     keep-derivations = true;
