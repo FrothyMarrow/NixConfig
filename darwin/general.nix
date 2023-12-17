@@ -33,6 +33,17 @@ in {
   nix.nixPath = ["nixpkgs=${inputs.nixpkgs}"];
   nix.registry.nixpkgs.flake = inputs.nixpkgs;
 
+  nix.buildMachines = [
+    {
+      hostName = "lix";
+      system = "x86_64-linux";
+      protocol = "ssh";
+      maxJobs = 4;
+      supportedFeatures = ["nixos-test" "benchmark" "big-parallel"];
+    }
+  ];
+  nix.distributedBuilds = true;
+
   users.users.${username} = {
     name = "${username}";
     home = "/Users/${username}";
