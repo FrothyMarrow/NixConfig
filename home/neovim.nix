@@ -74,6 +74,7 @@
         lsp.server = "clangd";
       };
       ts.enable = true;
+      python.enable = true;
     };
 
     vim.binds = {
