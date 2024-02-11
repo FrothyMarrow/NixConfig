@@ -82,13 +82,11 @@
       cheatsheet.enable = true;
     };
 
-    vim.presence.presence-nvim.enable = true;
-    vim.presence.presence-nvim = {
+    vim.presence.neocord.enable = true;
+    vim.presence.neocord = {
       auto_update = true;
       enable_line_number = true;
       show_time = true;
-      image_text = "The Text Editor";
-      main_image = "neovim";
       client_id = "793271441293967371";
       rich_presence.editing_text = "Editing %s";
     };
