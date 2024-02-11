@@ -27,7 +27,6 @@
     "amethyst"
     "whatsapp"
     "firefox"
-    "notion"
     "stats"
   ];
 
