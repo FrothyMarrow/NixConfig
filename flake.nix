@@ -47,7 +47,6 @@
       frothy-direnv = ./home/direnv.nix;
       frothy-fzf = ./home/fzf.nix;
       frothy-git = ./home/git.nix;
-      frothy-alacritty = ./home/alacritty.nix;
       frothy-wezterm = ./home/wezterm.nix;
       frothy-neovim = ./home/neovim.nix;
       frothy-copy-apps = ./home/copy-apps.nix;
