@@ -19,6 +19,7 @@
     "bitwarden"
     "microsoft-office"
     "microsoft-teams"
+    "macfuse"
     "vscodium"
     # great game btw
     "minecraft"
