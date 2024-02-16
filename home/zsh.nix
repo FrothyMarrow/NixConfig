@@ -22,7 +22,7 @@
     tree = "tree -aC";
 
     # make some commands less deadly
-    rm = "rm -i";
+    rm = "trash";
     cp = "cp -i";
     mv = "mv -i";
 
