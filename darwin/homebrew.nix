@@ -7,6 +7,7 @@
 
   homebrew.taps = [
     "FelixKratz/formulae"
+    "homebrew/services"
   ];
 
   homebrew.brews = [
