@@ -1,6 +1,9 @@
 {
   homebrew.enable = true;
-  homebrew.onActivation.autoUpdate = false;
+  homebrew.onActivation = {
+    autoUpdate = true;
+    cleanup = "zap";
+  };
 
   homebrew.taps = [
     "FelixKratz/formulae"
