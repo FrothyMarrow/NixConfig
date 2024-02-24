@@ -26,8 +26,6 @@
     "microsoft-teams"
     "macfuse"
     "vscodium"
-    # great game btw
-    "minecraft"
     "arc"
     "raycast"
     "amethyst"
