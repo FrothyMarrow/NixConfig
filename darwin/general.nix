@@ -39,7 +39,7 @@ in {
       system = "x86_64-linux";
       protocol = "ssh";
       maxJobs = 4;
-      supportedFeatures = ["nixos-test" "benchmark" "big-parallel"];
+      supportedFeatures = ["kvm" "nixos-test" "benchmark" "big-parallel"];
     }
   ];
   nix.distributedBuilds = true;
