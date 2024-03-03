@@ -104,6 +104,8 @@
       };
     };
 
+    vim.utility.images.image-nvim.enable = true;
+
     vim.autopairs.enable = true;
 
     vim.telescope.enable = true;
