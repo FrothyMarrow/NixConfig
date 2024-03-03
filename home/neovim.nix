@@ -104,7 +104,12 @@
       };
     };
 
-    vim.utility.images.image-nvim.enable = true;
+    vim.utility.images = {
+      image-nvim = {
+        enable = true;
+        setupOpts.backend = "kitty";
+      };
+    };
 
     vim.autopairs.enable = true;
 
