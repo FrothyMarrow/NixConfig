@@ -8,7 +8,6 @@
   homebrew.taps = [
     "FelixKratz/formulae"
     "homebrew/services"
-    "homebrew/cask"
   ];
 
   homebrew.brews = [
