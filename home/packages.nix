@@ -2,6 +2,8 @@
   home.packages = with pkgs; [
     obsidian
     element-desktop
+    qbittorrent
+    mpv
     bitwarden-cli
     linode-cli
     onefetch
