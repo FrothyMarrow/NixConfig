@@ -3,6 +3,7 @@
     obsidian
     element-desktop
     qbittorrent
+    zathura
     mpv
     bitwarden-cli
     linode-cli

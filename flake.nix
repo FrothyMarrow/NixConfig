@@ -32,39 +32,39 @@
       inherit system;
     };
 
-    darwinModules = {
-      aix-general = ./darwin/general.nix;
-      aix-defaults = ./darwin/defaults.nix;
-      aix-services = ./darwin/services.nix;
-      aix-homebrew = ./darwin/homebrew.nix;
-    };
+    darwinModules = [
+      ./darwin/general.nix
+      ./darwin/defaults.nix
+      ./darwin/services.nix
+      ./darwin/homebrew.nix
+    ];
 
-    homeManagerModules = {
-      frothy-general = ./home/general.nix;
-      frothy-packages = ./home/packages.nix;
-      frothy-zsh = ./home/zsh.nix;
-      frothy-starship = ./home/starship.nix;
-      frothy-direnv = ./home/direnv.nix;
-      frothy-fzf = ./home/fzf.nix;
-      frothy-git = ./home/git.nix;
-      frothy-wezterm = ./home/wezterm.nix;
-      frothy-neovim = ./home/neovim.nix;
-      frothy-copy-apps = ./home/copy-apps.nix;
-      frothy-spicetify = ./home/spicetify.nix;
-      frothy-borders = ./home/borders.nix;
-      notashelf-neovim-flake = inputs.neovim-flake.homeManagerModules.default;
-    };
+    homeManagerModules = [
+      ./home/general.nix
+      ./home/packages.nix
+      ./home/zsh.nix
+      ./home/starship.nix
+      ./home/direnv.nix
+      ./home/fzf.nix
+      ./home/git.nix
+      ./home/wezterm.nix
+      ./home/neovim.nix
+      ./home/copy-apps.nix
+      ./home/spicetify.nix
+      ./home/borders.nix
+      inputs.neovim-flake.homeManagerModules.default
+    ];
   in {
     darwinConfigurations.aix = darwin.lib.darwinSystem {
       inherit system;
       modules =
-        attrValues darwinModules
+        darwinModules
         ++ [
           home-manager.darwinModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.frothy.imports = attrValues homeManagerModules;
+            home-manager.users.frothy.imports = homeManagerModules;
             home-manager.extraSpecialArgs = {inherit inputs;};
           }
         ];
