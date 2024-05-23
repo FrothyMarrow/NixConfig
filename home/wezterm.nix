@@ -9,7 +9,7 @@
     config.color_scheme_dirs = { '${inputs.wezterm-oxocarbon}' }
     config.color_scheme = 'Oxocarbon Dark'
     config.window_decorations = 'RESIZE'
-    config.window_background_opacity = 0.8
+    config.window_background_opacity = 0.96
     config.macos_window_background_blur = 50
     config.enable_tab_bar = false
     config.max_fps = 120
