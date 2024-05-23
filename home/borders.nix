@@ -6,7 +6,7 @@
       width=6
       hidpi=on
       style=round
-      active_color=0xffea76cb
+      active_color=0xffee5396
     )
 
     borders "''${options[@]}"

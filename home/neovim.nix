@@ -20,15 +20,9 @@
 
     vim.theme.enable = true;
     vim.theme = {
-      name = "catppuccin";
-      style = "mocha";
+      name = "oxocarbon";
+      style = "dark";
       transparent = true;
-    };
-
-    vim.statusline.lualine.enable = true;
-    vim.statusline.lualine = {
-      theme = "catppuccin";
-      globalStatus = true;
     };
 
     vim.autopairs.enable = true;

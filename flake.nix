@@ -15,6 +15,9 @@
 
     spicetify-nix.url = "github:gerg-l/spicetify-nix";
     spicetify-nix.inputs.nixpkgs.follows = "nixpkgs";
+
+    wezterm-oxocarbon.url = "github:nyoom-engineering/oxocarbon-wezterm";
+    wezterm-oxocarbon.flake = false;
   };
 
   outputs = {
