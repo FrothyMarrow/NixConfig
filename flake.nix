@@ -27,8 +27,6 @@
     darwin,
     ...
   } @ inputs: let
-    inherit (nixpkgs.lib) attrValues;
-
     system = "aarch64-darwin";
 
     pkgs = import nixpkgs {
@@ -40,6 +38,7 @@
       ./darwin/defaults.nix
       ./darwin/services.nix
       ./darwin/homebrew.nix
+      ./darwin/overlays.nix
     ];
 
     homeManagerModules = [
@@ -54,7 +53,7 @@
       ./home/neovim.nix
       ./home/copy-apps.nix
       ./home/spicetify.nix
-      ./home/borders.nix
+      ./home/discord/discord.nix
       inputs.neovim-flake.homeManagerModules.default
     ];
   in {
@@ -67,6 +66,7 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
+            home-manager.backupFileExtension = "hbk";
             home-manager.users.frothy.imports = homeManagerModules;
             home-manager.extraSpecialArgs = {inherit inputs;};
           }

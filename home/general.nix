@@ -6,5 +6,7 @@
 
   fonts.fontconfig.enable = true;
 
+  xdg.enable = true;
+
   home.stateVersion = "23.05";
 }
