@@ -53,6 +53,7 @@
       ./home/neovim.nix
       ./home/copy-apps.nix
       ./home/spicetify.nix
+      ./home/borders.nix
       ./home/discord/discord.nix
       inputs.neovim-flake.homeManagerModules.default
     ];

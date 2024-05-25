@@ -12,5 +12,6 @@
     borders "''${options[@]}"
   '';
 in {
+  xdg.enable = true;
   xdg.configFile."borders/${configFileName}".source = "${config}/bin/${configFileName}";
 }
