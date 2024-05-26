@@ -14,7 +14,6 @@
   # aliases
   programs.zsh.shellAliases = {
     darwinsw = "darwin-rebuild switch --flake ~/.config/NixConfig";
-    co = "codium";
 
     ls = "lsd";
     la = "lsd -a";

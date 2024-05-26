@@ -25,7 +25,6 @@
     "microsoft-office"
     "microsoft-teams"
     "macfuse"
-    "vscodium"
     "arc"
     "raycast"
     "amethyst"
