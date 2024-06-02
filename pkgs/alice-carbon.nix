@@ -8,12 +8,13 @@
 }: let
   extName = "alice-carbon";
   extVersion = "1.1.2";
+  extPublisher = "frothymarrow";
   extvsix = stdenv.mkDerivation {
     name = "vscode-extension-${extName}";
     version = extVersion;
     src = fetchFromGitHub {
-      owner = "frothymarrow";
-      repo = "alice-carbon";
+      owner = extPublisher;
+      repo = extName;
       rev = "53248d6";
       sha256 = "sha256-WI4IOhFB+Emyh61HbNUrRSj+KTQonygj+mQbIkMoSpU=";
     };
@@ -31,10 +32,10 @@
   };
 in
   vscode-utils.buildVscodeExtension {
-    name = "alice-carbon";
+    name = extName;
     src = "${extvsix}/share/vscode/extensions/${extName}-${extVersion}.zip";
     version = extVersion;
-    vscodeExtPublisher = "frothymarrow";
-    vscodeExtName = "alice-carbon";
-    vscodeExtUniqueId = "frothymarrow.alice-carbon";
+    vscodeExtPublisher = extPublisher;
+    vscodeExtName = extName;
+    vscodeExtUniqueId = "${extPublisher}.${extName}";
   }
