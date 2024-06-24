@@ -26,6 +26,7 @@
       vadimcn.vscode-lldb
       xaver.clang-format
       ziglang.vscode-zig
+      leonardssh.vscord
       frothymarrow.alice-carbon
     ];
 
@@ -96,6 +97,10 @@
       };
       "editor.fontLigatures" = false;
       "workbench.colorTheme" = "alice-carbon";
+      "vscord.behaviour.suppressNotifications" = true;
+      "update.mode" = "none";
+      "telemetry.telemetryLevel" = "off";
+      "extensions.ignoreRecommendations" = true;
     };
   };
 }
