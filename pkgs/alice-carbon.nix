@@ -1,5 +1,5 @@
 {
-  stdenv,
+  stdenvNoCC,
   fetchFromGitHub,
   vscode-utils,
   nodejs,
@@ -9,7 +9,7 @@
   extName = "alice-carbon";
   extVersion = "1.1.2";
   extPublisher = "frothymarrow";
-  extvsix = stdenv.mkDerivation {
+  extvsix = stdenvNoCC.mkDerivation {
     name = "vscode-extension-${extName}";
     version = extVersion;
     src = fetchFromGitHub {
