@@ -110,11 +110,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1719180626,
-        "narHash": "sha256-vZAzm5KQpR6RGple1dzmSJw5kPivES2heCFM+ZWkt0I=",
+        "lastModified": 1719418488,
+        "narHash": "sha256-Hu75KIbGLJA8qe42rO5WkRQ+E+BuzjS42bNEZcy9zT8=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "6b1f90a8ff92e81638ae6eb48cd62349c3e387bb",
+        "rev": "607f969f5dca2dc100cbc53e24ab49ac24ef8987",
         "type": "github"
       },
       "original": {
@@ -242,6 +242,7 @@
         "plugin-toggleterm-nvim": "plugin-toggleterm-nvim",
         "plugin-tokyonight": "plugin-tokyonight",
         "plugin-trouble": "plugin-trouble",
+        "plugin-ts-error-translator": "plugin-ts-error-translator",
         "plugin-vim-dirtytalk": "plugin-vim-dirtytalk",
         "plugin-vim-fugitive": "plugin-vim-fugitive",
         "plugin-vim-illuminate": "plugin-vim-illuminate",
@@ -255,11 +256,11 @@
         "zig": "zig"
       },
       "locked": {
-        "lastModified": 1719246593,
-        "narHash": "sha256-1UqDbEP5uwlwj7/SN4HpLsGFCtwg2YY2nY64CcZoPus=",
+        "lastModified": 1719343932,
+        "narHash": "sha256-6bH1uHpUHS1BTt/h0utlBm9EjD61QazQJlUQYcQvvyQ=",
         "owner": "notashelf",
         "repo": "neovim-flake",
-        "rev": "923481640e92423e367e6223f5014b16be6863c6",
+        "rev": "1bb901edeb17de5694468691313ce1c741b9a058",
         "type": "github"
       },
       "original": {
@@ -340,11 +341,11 @@
     },
     "nixpkgs_3": {
       "locked": {
-        "lastModified": 1719082008,
-        "narHash": "sha256-jHJSUH619zBQ6WdC21fFAlDxHErKVDJ5fpN0Hgx4sjs=",
+        "lastModified": 1719317636,
+        "narHash": "sha256-bu0xbu2Z6DDzA9LGV81yJunIti6r7tjUImeR8orAL/I=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "9693852a2070b398ee123a329e68f0dab5526681",
+        "rev": "9c513fc6fb75142f6aec6b7545cb8af2236b80f5",
         "type": "github"
       },
       "original": {
@@ -1779,6 +1780,22 @@
         "type": "github"
       }
     },
+    "plugin-ts-error-translator": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1712269172,
+        "narHash": "sha256-NJ0qfKvkwZ/0GolAeATlQLyQ7nGN6Z6q3uRqI+73wPk=",
+        "owner": "dmmulroy",
+        "repo": "ts-error-translator.nvim",
+        "rev": "11ae55b28bde02663b5f983f59b0e3fd9c4e845b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "dmmulroy",
+        "repo": "ts-error-translator.nvim",
+        "type": "github"
+      }
+    },
     "plugin-vim-dirtytalk": {
       "flake": false,
       "locked": {
@@ -1972,11 +1989,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1719202310,
-        "narHash": "sha256-s4p8898rQJRoperAb2aecpmgwjzZWDBuA4am0hwvcoA=",
+        "lastModified": 1719375127,
+        "narHash": "sha256-dqquTwT5MGR4TN1E16gugiDTFkoir5QN39rJwjvvTaw=",
         "owner": "gerg-l",
         "repo": "spicetify-nix",
-        "rev": "04ac808fd01989ec6694dca0eb0440d3800d2745",
+        "rev": "755bcd15fe98c177eb5193280d9e0b517cca4322",
         "type": "github"
       },
       "original": {
