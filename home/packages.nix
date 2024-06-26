@@ -6,11 +6,6 @@
     ripgrep
     fd
     lsd
-    (mpv.override {
-      mpv = mpv-unwrapped.override {
-        vulkanSupport = true;
-      };
-    })
     (nerdfonts.override {
       fonts = [
         "Iosevka"
