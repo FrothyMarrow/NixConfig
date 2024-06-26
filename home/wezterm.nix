@@ -12,7 +12,6 @@
     config.window_background_opacity = 0.96
     config.macos_window_background_blur = 50
     config.enable_tab_bar = false
-    config.max_fps = 120
     config.window_close_confirmation = 'NeverPrompt'
     return config
   '';
