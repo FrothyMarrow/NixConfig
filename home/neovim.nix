@@ -1,4 +1,12 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  inputs,
+  ...
+}: {
+  imports = [
+    inputs.neovim-flake.homeManagerModules.default
+  ];
+
   programs.neovim-flake.enable = true;
 
   programs.neovim-flake.settings = {

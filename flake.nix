@@ -57,7 +57,6 @@
       ./home/vscode.nix
       ./home/mpv.nix
       ./home/discord/discord.nix
-      inputs.neovim-flake.homeManagerModules.default
     ];
   in {
     darwinConfigurations.aix = darwin.lib.darwinSystem {
