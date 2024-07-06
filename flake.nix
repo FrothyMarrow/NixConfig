@@ -55,7 +55,8 @@
       ./home/spicetify.nix
       ./home/borders.nix
       ./home/vscode.nix
-      ./home/mpv.nix
+      # Required dependency 'swift-wrapper-5.8' is marked as broken
+      #./home/mpv.nix
       ./home/discord/discord.nix
     ];
   in {
