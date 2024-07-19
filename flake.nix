@@ -10,8 +10,7 @@
     darwin.url = "github:lnl7/nix-darwin";
     darwin.inputs.nixpkgs.follows = "nixpkgs";
 
-    neovim-flake.url = "github:notashelf/neovim-flake";
-    neovim-flake.inputs.nixpkgs.follows = "nixpkgs";
+    mnw.url = "github:gerg-l/mnw";
 
     spicetify-nix.url = "github:gerg-l/spicetify-nix";
     spicetify-nix.inputs.nixpkgs.follows = "nixpkgs";
@@ -50,13 +49,12 @@
       ./home/fzf.nix
       ./home/git.nix
       ./home/wezterm.nix
-      ./home/neovim.nix
+      ./home/mnw.nix
       ./home/copy-apps.nix
       ./home/spicetify.nix
       ./home/borders.nix
       ./home/vscode.nix
-      # Required dependency 'swift-wrapper-5.8' is marked as broken
-      #./home/mpv.nix
+      ./home/mpv.nix
       ./home/discord/discord.nix
     ];
   in {
