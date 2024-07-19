@@ -31,7 +31,6 @@
     "whatsapp"
     "firefox"
     "stats"
-    "vlc"
   ];
 
   homebrew.masApps = {
