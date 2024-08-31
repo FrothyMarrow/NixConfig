@@ -1,5 +1,6 @@
 {
   pkgs,
+  please-fix-swift-pkgs,
   lib,
   ...
 }: {
@@ -16,6 +17,8 @@
       vscode-extensions = lib.recursiveUpdate prev.vscode-extensions {
         frothymarrow.alice-carbon = pkgs.callPackage ../pkgs/alice-carbon.nix {};
       };
+
+      swift = please-fix-swift-pkgs.swift;
     })
   ];
 }
