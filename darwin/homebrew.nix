@@ -24,6 +24,8 @@
     "bitwarden"
     "microsoft-office"
     "microsoft-teams"
+    "prismlauncher"
+    "intellij-idea"
     "macfuse"
     "arc"
     "raycast"
