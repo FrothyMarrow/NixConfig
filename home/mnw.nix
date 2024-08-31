@@ -20,8 +20,6 @@
       oxocarbon-nvim
     ];
 
-    loadDefaultRC = false;
-
     initLua = ''
       require('oxocarbon')
       vim.opt.background = "dark"
