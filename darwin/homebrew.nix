@@ -26,6 +26,7 @@
     "microsoft-teams"
     "prismlauncher"
     "intellij-idea"
+    "android-studio"
     "macfuse"
     "arc"
     "raycast"
