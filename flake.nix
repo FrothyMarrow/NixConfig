@@ -1,10 +1,11 @@
 {
+
   description = "My darwin system config";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixpkgs-unstable";
 
-    please-fix-swift-nixpkgs.url = "github:nixos/nixpkgs?rev=9c513fc6fb75142f6aec6b7545cb8af2236b80f5";
+    last-cached-swift-nixpkgs.url = "github:nixos/nixpkgs?rev=9c513fc6fb75142f6aec6b7545cb8af2236b80f5";
 
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
@@ -24,7 +25,6 @@
   outputs = {
     self,
     nixpkgs,
-    please-fix-swift-nixpkgs,
     home-manager,
     darwin,
     ...
@@ -32,10 +32,6 @@
     system = "aarch64-darwin";
 
     pkgs = import nixpkgs {
-      inherit system;
-    };
-
-    please-fix-swift-pkgs = import please-fix-swift-nixpkgs {
       inherit system;
     };
 
@@ -79,7 +75,7 @@
             home-manager.extraSpecialArgs = {inherit inputs;};
           }
         ];
-      specialArgs = {inherit inputs please-fix-swift-pkgs;};
+      specialArgs = {inherit inputs;};
     };
 
     formatter.${system} = pkgs.alejandra;

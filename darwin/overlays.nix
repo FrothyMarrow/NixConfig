@@ -1,6 +1,6 @@
 {
+  inputs,
   pkgs,
-  please-fix-swift-pkgs,
   lib,
   ...
 }: {
@@ -18,7 +18,7 @@
         frothymarrow.alice-carbon = pkgs.callPackage ../pkgs/alice-carbon.nix {};
       };
 
-      swift = please-fix-swift-pkgs.swift;
+      swift = inputs.last-cached-swift-nixpkgs.legacyPackages.aarch64-darwin.swift;
     })
   ];
 }
