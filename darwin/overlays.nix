@@ -12,8 +12,6 @@
         ];
       };
 
-      anime4k = pkgs.callPackage ../pkgs/anime4k.nix {};
-
       vscode-extensions = lib.recursiveUpdate prev.vscode-extensions {
         frothymarrow.alice-carbon = pkgs.callPackage ../pkgs/alice-carbon.nix {};
       };
