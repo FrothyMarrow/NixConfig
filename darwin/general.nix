@@ -30,8 +30,10 @@ in {
     ];
   };
 
-  nix.nixPath = ["nixpkgs=${inputs.nixpkgs}"];
-  nix.registry.nixpkgs.flake = inputs.nixpkgs;
+  nixpkgs.flake = {
+    setFlakeRegistry = true;
+    setNixPath = true;
+  };
 
   nix.buildMachines = [
     {
@@ -44,9 +46,11 @@ in {
   ];
   nix.distributedBuilds = true;
 
-  users.users.${username} = {
-    name = "${username}";
-    home = "/Users/${username}";
+  users = {
+    users.${username} = {
+      name = "${username}";
+      home = "/Users/${username}";
+    };
   };
 
   system.stateVersion = 4;
