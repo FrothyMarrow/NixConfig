@@ -5,8 +5,6 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixpkgs-unstable";
 
-    last-cached-swift-nixpkgs.url = "github:nixos/nixpkgs?rev=9c513fc6fb75142f6aec6b7545cb8af2236b80f5";
-
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
