@@ -15,7 +15,6 @@
       vulkan-async-transfer = "yes";
       vulkan-queue-count = 1;
       vd-lavc-dr = "yes";
-      framedrop = "no";
 
       msg-color = "yes";
       term-osd-bar = "yes";
@@ -28,6 +27,8 @@
       video-sync = "display-resample";
       interpolation = "yes";
       tscale = "oversample";
+
+      sub-scale = 0.5;
     };
 
     bindings = let
