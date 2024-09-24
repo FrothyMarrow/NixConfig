@@ -23,6 +23,7 @@
   homebrew.casks = [
     "bitwarden"
     "microsoft-office"
+    "karabiner-elements"
     "microsoft-teams"
     "prismlauncher"
     "intellij-idea"
