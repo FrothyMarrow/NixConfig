@@ -30,6 +30,7 @@
     "android-studio"
     "macfuse"
     "arc"
+    "zed"
     "raycast"
     "amethyst"
     "whatsapp"
