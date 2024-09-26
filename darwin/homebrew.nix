@@ -13,7 +13,6 @@
   homebrew.brews = [
     # for vscode-neovim
     "neovim"
-    "macos-trash"
     {
       name = "borders";
       restart_service = "changed";
