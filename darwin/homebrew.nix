@@ -28,6 +28,7 @@
     "prismlauncher"
     "intellij-idea"
     "android-studio"
+    "mullvadvpn"
     "macfuse"
     "arc"
     "zed"
@@ -37,8 +38,4 @@
     "firefox"
     "stats"
   ];
-
-  homebrew.masApps = {
-    "WireGuard" = 1451685025;
-  };
 }
