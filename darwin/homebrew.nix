@@ -13,6 +13,7 @@
   homebrew.brews = [
     # for vscode-neovim
     "neovim"
+    "mgba"
     {
       name = "borders";
       restart_service = "changed";
