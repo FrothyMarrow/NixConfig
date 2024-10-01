@@ -1,4 +1,8 @@
 {
+  pkgs,
+  lib,
+  ...
+}: {
   programs.zsh.enable = true;
 
   programs.zsh = {
@@ -15,9 +19,9 @@
   programs.zsh.shellAliases = {
     darwinsw = "darwin-rebuild switch --flake ~/.config/NixConfig";
 
-    ls = "lsd";
-    la = "lsd -a";
-    ll = "lsd -la";
+    ls = "${lib.getExe pkgs.eza}";
+    la = "${lib.getExe pkgs.eza} -a";
+    ll = "${lib.getExe pkgs.eza} -la";
     tree = "tree -aC";
 
     # make some commands less deadly

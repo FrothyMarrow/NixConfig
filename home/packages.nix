@@ -5,7 +5,6 @@
     zathura
     ripgrep
     fd
-    lsd
     (nerdfonts.override {
       fonts = [
         "Iosevka"
