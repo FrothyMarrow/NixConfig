@@ -4,11 +4,6 @@
     qbittorrent
     zathura
     ripgrep
-    fd
-    (nerdfonts.override {
-      fonts = [
-        "Iosevka"
-      ];
-    })
+    nerd-fonts.iosevka
   ];
 }
