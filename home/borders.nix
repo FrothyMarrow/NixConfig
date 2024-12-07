@@ -7,6 +7,7 @@
       hidpi=on
       style=round
       active_color=0xffee5396
+      blacklist="iPhone Mirroring"
     )
 
     borders "''${options[@]}"
