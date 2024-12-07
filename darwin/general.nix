@@ -7,7 +7,6 @@
 in {
   # shells
   environment.shells = with pkgs; [bash zsh];
-  environment.loginShell = pkgs.zsh;
 
   programs.zsh.enable = true;
 
