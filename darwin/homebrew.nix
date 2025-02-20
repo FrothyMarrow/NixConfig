@@ -21,22 +21,14 @@
   ];
 
   homebrew.casks = [
-    "bitwarden"
-    "microsoft-office"
     "visual-studio-code"
     "karabiner-elements"
-    "microsoft-teams"
-    "prismlauncher"
-    "intellij-idea"
-    "android-studio"
-    "mullvadvpn"
-    "macfuse"
-    "arc"
     "zed"
     "raycast"
     "amethyst"
     "whatsapp"
     "firefox"
     "stats"
+    "ghostty"
   ];
 }
