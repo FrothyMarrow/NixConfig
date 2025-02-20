@@ -4,6 +4,7 @@
     qbittorrent
     zathura
     ripgrep
+    fd
     nerd-fonts.iosevka
   ];
 }
