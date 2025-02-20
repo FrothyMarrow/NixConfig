@@ -23,6 +23,7 @@
   homebrew.casks = [
     "bitwarden"
     "microsoft-office"
+    "visual-studio-code"
     "karabiner-elements"
     "microsoft-teams"
     "prismlauncher"
