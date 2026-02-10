@@ -2,26 +2,26 @@
   pkgs,
   lib,
   ...
-}: {
+}:
+{
   programs.zsh.enable = true;
 
   programs.zsh = {
     enableCompletion = true;
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
-    initExtra = ''
+    initContent = ''
       bindkey -v
     '';
   };
 
   programs.zsh.sessionVariables = {
     EDITOR = "nvim";
+    TERM = "xterm-256color";
   };
 
   # aliases
   programs.zsh.shellAliases = {
-    darwinsw = "darwin-rebuild switch --flake ~/.config/NixConfig";
-
     ls = "${lib.getExe pkgs.eza}";
     la = "${lib.getExe pkgs.eza} -a";
     ll = "${lib.getExe pkgs.eza} -la";

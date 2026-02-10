@@ -2,15 +2,18 @@
   inputs,
   pkgs,
   ...
-}: let
+}:
+let
   username = "frothy";
-in {
-  # shells
-  environment.shells = with pkgs; [bash zsh];
+in
+{
+  environment.shells = with pkgs; [
+    bash
+    zsh
+  ];
 
   programs.zsh.enable = true;
 
-  # system packages
   environment.systemPackages = with pkgs; [
     vim
     coreutils
@@ -34,23 +37,14 @@ in {
     setNixPath = true;
   };
 
-  nix.buildMachines = [
-    {
-      hostName = "lix";
-      system = "x86_64-linux";
-      protocol = "ssh";
-      maxJobs = 4;
-      supportedFeatures = ["kvm" "nixos-test" "benchmark" "big-parallel"];
-    }
-  ];
-  nix.distributedBuilds = true;
-
   users = {
     users.${username} = {
-      name = "${username}";
+      name = username;
       home = "/Users/${username}";
     };
   };
+
+  system.primaryUser = username;
 
   system.stateVersion = 4;
 }

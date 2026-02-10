@@ -2,7 +2,8 @@
   pkgs,
   inputs,
   ...
-}: {
+}:
+{
   imports = [
     inputs.mnw.homeManagerModules.default
   ];
@@ -12,13 +13,13 @@
     neovim = pkgs.neovim-unwrapped;
 
     appName = "nvim";
-    viAlias = false;
-    vimAlias = true;
 
-    plugins = with pkgs.vimPlugins; [
-      auto-pairs
-      oxocarbon-nvim
-    ];
+    plugins = {
+      start = [
+        pkgs.vimPlugins.auto-pairs
+        pkgs.vimPlugins.oxocarbon-nvim
+      ];
+    };
 
     initLua = ''
       require('oxocarbon')

@@ -8,7 +8,6 @@
     KeyRepeat = 1;
   };
 
-  # dock and mission control
   system.defaults.dock = {
     show-recents = false;
     mru-spaces = false;
@@ -22,7 +21,6 @@
     orientation = "bottom";
   };
 
-  # menu clock
   system.defaults.menuExtraClock = {
     ShowSeconds = true;
     ShowDayOfWeek = true;
@@ -31,29 +29,24 @@
     ShowDate = 0;
   };
 
-  # finder
   system.defaults.finder = {
     FXPreferredViewStyle = "clmv";
     ShowPathbar = true;
   };
 
-  # trackpad
   system.defaults.trackpad = {
     Clicking = true;
     Dragging = true;
   };
 
-  # screenshots
   system.defaults.screencapture = {
     location = "~/Pictures/Screenshots";
     type = "png";
   };
 
-  # system updates
   system.defaults.SoftwareUpdate = {
     AutomaticallyInstallMacOSUpdates = false;
   };
 
-  # sudo authentication
-  security.pam.enableSudoTouchIdAuth = true;
+  security.pam.services.sudo_local.touchIdAuth = true;
 }
